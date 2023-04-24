@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="400" poster="foto-p.png" controls >
+        <source src="midia/video-mp4.mp4" type="video/mp4">
+        <source src="midia/video-ogv.ogv" type="video/ogg">
+        <p>Seu navegador não consegue executar este vídeo</p>
+    </video>
+    <h1>Vídeo hospedado em local externo</h1>
+    <H2>Vídeo do youtube</H2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TFQhW3Iddlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <video controls width="560" height="315" poster="foto-p.png">
+        <source src="midia/video-mp4.mp4" type="video/mp4">
+    </video>
+
+    <picture>
+        <source media="(max-width: 1050)" srcset="foto-p.png" type="image/png">
+        <img src="foto-p.png" alt="buut">
+    </picture>
+    <audio controls autoplay loop preload="auto" >
+        <source src="midia/Keep-On-Movin-King Canyon.mp3" type="audio/mp3">
+    </audio>
+    <video controls poster="foto-p.png" width="560" height="315">
+        <source src="midia/video-mp4.mp4" type="video/mp4">
+    </video>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@font-face {
+    font-family:'kestrel' ;
+    src: url(american_kestrel/americankestral1_2.ttf)format('truetype');
+
+}
+main{
+     background-color: aliceblue;
+     padding: 5px;
+     margin: auto;  
+     width: 800px;
+     text-align: justify;
+     border-radius: 10px;
+     box-shadow: 1px 1px 3px black;
+}
+
+h1{
+    font-family: 'kestrel';
+}
+body{
+    background-color: rgb(240, 233, 223);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 580;
+
+}

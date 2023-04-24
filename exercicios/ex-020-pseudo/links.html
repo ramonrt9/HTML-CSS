@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren
+
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1px;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: rgb(55, 124, 250);
+        }
+        a:active{
+            color: black;
+            text-decoration: underline;
+        }
+        a::after {
+            content:'[link]' ;
+            text-decoration: none;
+            font-weight: normal;
+            color:darkgray;
+        }
+        a:hover{
+            text-decoration: underline;
+            
+        }
+        .especial:hover{
+            color: aliceblue;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before{
+            content: '<<';
+            font-weight: lighter;
+        }
+        nav{
+            background-color: darkgray;
+            padding: 1px;
+            margin: 1px;
+        }
+        
+    </style>
+ 
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">Repositório GitHub</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=guanabara+java">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com/" class="especial">Site do CursoemVideo</a></li>
+        </ul>
+    </nav>
+    <div>
+        Em caso de dúvidas...
+        <p>Entre em contato</p>
+    </div>
+    
+</body>
+</html>
