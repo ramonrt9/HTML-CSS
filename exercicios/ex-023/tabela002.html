@@ -7,21 +7,44 @@
     <title>Tabelas</title>
     <style>
         body{
-            background-color: rgba(231, 223, 212, 0.747);
+            background-color: rgba(240, 234, 227, 0.747);
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
             width: 500px;
-            height: 150px;
-            border-collapse: collapse;
+            height: 200px;
+            border-collapse:collapse;
             text-align: center;
+            position: relative;
 
         }
         td, th{
             border: 1px solid black;
+            padding: 5px;
         }
         td.numero{
             text-align: right;
+        }
+        caption{
+           
+            padding: 3px;
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: darkgray;
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+            
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        thead >tr >th{
+            position: sticky;
+            top: -2px;
+            background-color: #383838;
+
         }
     </style>
 </head>
@@ -38,13 +61,76 @@
             TR, TD, TH
 -->
     <TABLE>
-        <THEAD>
-            <TR>
-                <TH>Estado</TH>
-                <TH>População</TH>
-            </TR>
-        </THEAD>
+        <caption>Estados do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
         <TBODY>
+            <tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr>
+            <tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr><tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr><tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr>
+            <tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr>
+            <tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr>
+            <tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr>
+            <tr>
+                <TD>São Paulo</TD>
+                <td  class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <TD class="numero">19 597 330</TD>
+            </tr>
             <tr>
                 <TD>São Paulo</TD>
                 <td  class="numero">45 919 049</td>
@@ -61,8 +147,40 @@
                 <td>Bahia</td>
                 <td class="numero">14 016 906</td>
             </tr>
+            <TR>
+                <td>Minas Gerais</td>
+                <td class="numero">15 989 929</td>
+            </TR>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <TR>
+                <td>Minas Gerais</td>
+                <td class="numero">15 989 929</td>
+            </TR>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <TR>
+                <td>Minas Gerais</td>
+                <td class="numero">15 989 929</td>
+            </TR>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <TR>
+                <td>Minas Gerais</td>
+                <td class="numero">15 989 929</td>
+            </TR>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
             <tfoot>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>00000</strong></td>
             </tfoot>
 
