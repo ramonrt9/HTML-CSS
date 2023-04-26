@@ -18,8 +18,9 @@
            color: #333333;
            
         }
-        td{            border: 1px solid black;
-
+        td, th{            
+            border: 1px solid black;
+            text-align: left;
             padding:5px;
         }
         .segunda{
@@ -29,6 +30,11 @@
         }
         td{
             vertical-align: bottom;
+        }
+        caption{
+            text-align: right;
+            text-transform: capitalize;
+            caption-side: bottom;
         }
 
     </style>
@@ -59,7 +65,7 @@
             <TD>0</TD>
         </tr>
         <tr>
-            <td>Flamengo</td>
+            <th>Flamengo</th>
             <td>3</td>
             <td>2</td>
             <td>1</td>
@@ -87,6 +93,7 @@
     <br>
     <h1>Segunda Tabela</h1>
     <table class="segunda">
+        <caption>tabela da libertadores</caption>
         <tr>
             <td>CLASSIFICAÇÃO</td>
             <td>P</td>
@@ -115,7 +122,7 @@
             <td>Aucas</td>
             <td>3</td>
             <td>2</td>
-            <td>1</td>
+            <td >1</td>
             <TD>0</TD>
             <TD>1</TD>
         </tr>
@@ -123,8 +130,8 @@
             <td>Ñublense</td>
             <td>0</td>
             <td>2</td>
-            <td>0</td>
-            <TD>0</TD>
+            <td colspan="2">0</td>
+            
             <TD>2</TD>
     </table>
     
