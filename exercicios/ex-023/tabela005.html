@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+        }
+        caption{
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        tr:nth-child(2n){
+            background-color: rgb(250, 227, 199);
+        }
+        .um{
+            background-color: blueviolet;
+        }
+        .dois{
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Execícios de Tabela</h1>
+    
+    <table>
+        <colgroup>
+            <col class="um">
+            <col class="dois">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ramon</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Militar</td>
+            </tr>
+            <tr>
+                <td>Rafaela</td>
+                <td>S</td>
+                <td>28</td>
+                <td>Vendedora</td>
+
+            </tr>
+            <tr>
+                <td>Luciana</td>
+                <td>S</td>
+                <td>51</td>
+                <td>Dona</td>
+            </tr>
+            <tr>
+                <td>Roberto</td>
+                <td>M</td>
+                <td>55</td>
+                <td>Vendedor</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

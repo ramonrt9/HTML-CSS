@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        tr:nth-child(odd){
+            background-color: lightcoral;
+            
+        }
+        thead{
+            background-color: #383838;
+            color:white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        caption{
+            background-image: linear-gradient(to top, #383838, white);
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="2">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+
+            </tr>
+            <tr>
+                <td>Bia</td>
+                <td>hulk</td>
+                <td>inception</td>
+
+            </tr>
+            
+            <tr>
+                <td>claudia</td>
+                <td>x</td>
+                <td>matrix</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>bruno</td>
+                <td>hoje</td>
+                <td>amiésia</td>
+            </tr>
+            <tr>
+                <td>daniel</td>
+                <td>wall-e</td>
+                <td>star</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

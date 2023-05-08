@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 900px;
+            text-align: center;
+            position: relative;
+        }
+        thead{
+            background-color: darkslategrey;
+            color: white;
+        }
+        td, th, tr {
+            border: 1px solid black;
+        }
+        caption{
+            background-color: lightgray;
+            padding: 8px;
+            font-weight:bolder;
+            font-size: 1.2em;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando Tabelas</h1>
+    <table>
+        <caption>Tabela dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">Siglas</th>
+                <th scope="col">Capitais</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td>AC</td>
+                <td>Rio branco</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>AP</td>
+                <td>Macapá</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>AM</td>
+                <td>Manaus</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>PA</td>
+                <td>Belém</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>RO</td>
+                <td>Porto velho</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>RR</td>
+                <td>Boa vista</td>
+            </tr>
+            <tr>
+                <td>Tocantis</td>
+                <td>TO</td>
+                <td>Palmas</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>AC</td>
+                <td>Rio branco</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
