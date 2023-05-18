@@ -9,17 +9,26 @@
 <body>
     <h1>Preencha seus dados</h1>
     <form action="cadastro.php" autocomplete="on" method="post">
-        <p>
-            <label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome" required minlength="8" maxlength="20" placeholder="Preencha seu nome" autocomplete="username" size="10"> </p>
-        <p>
-            <label for="iidade">Idade:</label> 
-            <input type="number" name="idade"d="iidade" required minlength="1" maxlength="3" size="3" autocomplete="cc-exp-year">      
-         </p>
-        <p><label for="inacionalidade">Nacionalidade:</label> 
-           <input type="text" name="nacionalidade" id="inacionalidade" required minlength="5" maxlength="15" autocomplete="country" size="10" placeholder="país"> 
-        </p>
-        <p><input type="submit" value="Enviar"></p>
+        <fieldset>
+            <legend>Formulário</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="8" maxlength="20" placeholder="Preencha seu nome" autocomplete="username" size="10"> </p>
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade"d="iidade" required minlength="1" maxlength="3" size="3" autocomplete="cc-exp-year">
+             </p>
+            <p><label for="inacionalidade">Nacionalidade:</label>
+               <input type="text" name="nacionalidade" id="inacionalidade" required minlength="5" maxlength="15" autocomplete="country" size="10" placeholder="país">
+            </p>
+            <p>
+                <label for="inumero">Número</label>
+                <input type="number" name="numero" id="inumero" min="0" max="100" required autocomplete="cc-number">
+            </p>
+        </fieldstep>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+
     </form>
     
 </body>
