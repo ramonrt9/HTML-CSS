@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php">
+        <label for="inumero">Média</label>
+        <input type="range" name="numero" id="inumero" min="0" max="10" value="2" oninput="ivalor.innerHTML = Number(inumero.value)">
+        <label for="ivalor"></label>
+        <output id="ivalor"></output>
+<br>
+        <label for="v1">Valor 1:</label>
+        <input type="number" name="v1" id="iv1" min="0" max="10" oninput="imult.innerHTML= Number(iv1.value) ** Number(iv2.value)">
+        <label for="v2">Valor 2:</label>
+        <input type="number" name="v2" id="iv2" min="0" max="10">
+    <br>    <label for="imult">Resultado:</label>
+            <output id="imult"></output>
+
+    </form>
+
+
+</body>
+</html>
