@@ -1,0 +1,15 @@
+@charset "UTF-8";
+html{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+ul{
+    display: none;
+}
+header{
+    text-align: center;
+    
+}
+p{
+    line-height: 5em;
+}
