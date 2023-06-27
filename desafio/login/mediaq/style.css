@@ -7,6 +7,7 @@
     
     section#login{
         width: 70vw;
+        height: 350px;
     }
     section#login > div#img{
         float: left;
@@ -17,6 +18,9 @@
         float: right;
         width: 65%;
     }
+    div#form > p{
+        padding: 15px;
+    }
 }
 @media screen and (min-width: 992px
 ) { main{
@@ -24,6 +28,7 @@
     }
     section#login{
         width: 75vw;
+        height: 350px;
     }
     section#login > div#img{
         float: right;
@@ -33,5 +38,8 @@
     section#login > div#form{
         float: left;
         width: 55%;
+    }
+    div#form > p{
+        padding: 16px;
     }
 }
