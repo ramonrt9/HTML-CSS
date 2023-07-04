@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    font-size: 1.2em;
+}
+header{
+    background-color: black;
+    height: 60px;
+}
+header > h1{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main{
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    width: 65vw;
+    height: 75vh;
+    background-color: antiquewhite;
+    line-height: 35px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    
+}
+label{
+    
+}
